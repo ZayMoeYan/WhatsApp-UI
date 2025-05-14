@@ -1,0 +1,241 @@
+.chat-info-box {
+    display: flex;
+    flex-direction: row;
+}
+
+/* navbar */
+
+.navbar {
+    height: 100vh;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(34, 46, 53);
+    align-items: center;
+    border: 0.3px solid gray;
+    justify-content: space-between;
+}
+
+.other-nav, .setting-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.other-nav > div {
+    position: relative;
+    margin-bottom: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.other-nav > .chat-icon-container {
+    position: relative;
+    background-color:  rgba(255, 255, 255, 0.3);
+    padding: 8px 8px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.other-nav > div > img,
+.setting-nav > div > img {
+    height: 20px;
+}
+
+
+.setting-nav > div {
+    position: relative;
+    margin-bottom: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.setting-nav > .profile-container {
+    background-color: rgb(223, 223, 223);
+    padding: 8px 8px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-box {
+    background-color: lightpink;
+    width: 500px;
+    height: 500px;
+}
+
+/*  toolip */
+
+.other-nav > div > .toolip,
+.setting-nav > div > .toolip {
+    position: absolute;
+    left: 42px;
+    opacity: 0;
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 20px;
+    transition: opacity 0.2s;
+    pointer-events: none;
+    z-index: 1;
+    font-size: 13px;
+}
+.other-nav > .chat-icon-container  > .toolip,
+.setting-nav > .profile-container  > .toolip {
+    left: 50px;
+}
+
+.other-nav > div:hover .toolip,
+.setting-nav > div:hover .toolip {
+   opacity: 1;
+}
+
+/* chats-box */
+
+.chats-box {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(17, 27, 33);
+    width: 400px;  
+}
+
+.chats-title-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+
+.chats-title-box > p {
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.chats-title-box  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60px;
+
+}
+
+.chats-title-box > div > img {
+    height: 20px;
+    cursor: pointer;
+}
+
+.menu-icon {
+    height: 25px;
+    cursor: pointer;
+} 
+
+.search-bar-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar-box  > img {
+    height: 13px;
+    position: absolute;
+    left: 30px;
+}
+
+.search-bar {
+    width: 317px;
+    background-color: rgb(34, 46, 53);
+    border: none;
+    border-radius: 7px;
+    padding: 8px 0 8px 55px;
+    color: white;
+}
+
+.search-bar::placeholder {
+    color: rgb(163, 163, 163);
+}
+
+.chat-lists {
+    margin-top: 6px;
+    display: flex;
+    flex-direction: row;
+}
+
+.chat-lists > .list-box {
+    background-color: rgb(34, 46, 53);
+    border-radius: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.chat-lists > .list-box:hover {
+    background-color: rgb(41, 51, 57);
+}
+
+.chat-lists > .list-box > p {
+    font-size: 13px;
+    padding: 8px 14px;
+    color: rgb(163, 163, 163);
+}
+
+.chat-box-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6px;
+}
+
+.chat-box {
+    display: flex;
+    padding: 8px;
+    cursor: pointer;
+    align-items: center;
+    border-bottom: 1px solid rgb(34, 46, 53);
+}
+
+.chat-box > .profile {
+    display: flex;
+    align-items: center;
+}
+
+.chat-box > .profile > img {
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+}
+
+.chat-box:hover {
+    background-color: rgb(34, 46, 53);
+}
+
+.chatting {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+}
+
+.chatting > div > p:nth-of-type(1) {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.chatting > div > p:nth-of-type(2) {
+    color: rgb(163, 163, 163);
+    font-size: 12px;
+}
+
+.chatting > p{
+    color: rgb(163, 163, 163);
+    font-size: 12px;
+}
+
